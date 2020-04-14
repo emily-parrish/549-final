@@ -1,0 +1,32 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    background-image: url("../img/Mountains.jpg");
+    background-size: cover;
+    background-position: top;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+header img {
+    max-width: 350px;
+    margin: 0px;
+}
+h1 {
+    color: white;
+    margin-top: 0px;
+}
+
+#byline {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+main {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
