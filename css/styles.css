@@ -25,8 +25,51 @@ h1 {
     padding-right: 1rem;
 }
 
+#byline p {
+    text-align: right;
+    font-size: 13px;
+}
+
 main {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+input {
+    width: 100%;
+}
+
+table {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #007a33;
+    color: white;
+}
+
+th, td {
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid;
+}
+
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+table a:link {
+    color: #007a33;
+    text-decoration: none;
+}
+
+table a:visited {
+    color: #062d74;
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+  }
 

@@ -23,17 +23,204 @@
         </div>
     </nav>
     <main>
+        <p>Search:</p>
+        <input type="text" onkeyup="searchFunction()" placeholder="(by list title, description, book/movie title or author)" title="search">
         <p>Filter by:</p>
         <ul>
-            <li>Title/Description (freetext)</li>
-            <li>Book/movie title (freetext)</li>
-            <li>Author (freetext)</li>
             <li>Genre (dropdown)</li>
+            <li>Fiction/Non-fiction (dropdown)</li>
             <li>Appeal (dropdown)</li>
             <li>Language (dropdown)</li>
-            <li>Age (dropdown)</li>
+            <li>Audience Age (dropdown)</li>
         </ul>
-        <p>Really long responsive table goes here</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Item Titles</th>
+                    <th>Item Authors</th>
+                    <th>Keywords</th>
+                    <th>Genre</th>
+                    <th>Fic/Non-fic</th>
+                    <th>Appeal</th>
+                    <th>Language</th>
+                    <th>Audience Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://wccls.bibliocommons.com/list/share/1297716497_hillsboro_recommends/1620362414">Digging Up Intrigue: Archaeological mysteries, suspense, and thrillers (digital edition)</a></td>
+                    <td>The Crossing Places
+                        Crocodile on the Sandbank
+                        The Shadowy Horses
+                        Labyrinth
+                        A Treacherous Curse
+                        Women of the Dunes
+                        Birthright
+                        The Visitors
+                        The Keepsake
+                        The Crowded Grave
+                        The Cursed Key
+                        Excavation
+                        The Hunt for Atlantis
+                        The Bone Labyrinth
+                        Timeline
+                        The Engines of God</td>
+                    <td>Griffiths, Elly
+                        Peters, Elizabeth
+                        Kearsley, Susanna
+                        Mosse, Kate
+                        RAYBOURN, DEANNA
+                        Maine, Sarah
+                        Roberts, Nora
+                        Beauman, Sally
+                        Gerritsen, Tess
+                        Walker, Martin
+                        Hamilton, Rebecca
+                        Rollins, James
+                        McDermott, Andy
+                        Crichton, Michael
+                        McDevitt, Jack</td>
+                    <td>history techno-thriller escape intrigue adventure danger romance future paranormal egypt</td>
+                    <td>Mystery, Thriller</td>
+                    <td>Fiction</td>
+                    <td>atmospheric character-driven compelling fast-paced haunting strong female protagonist suspenseful well-developed characters</td>
+                    <td>English</td>
+                    <td>Adult</td>
+                </tr>
+                <tr>
+                    <td><a href="https://wccls.bibliocommons.com/list/share/1297716497_hillsboro_recommends/1616214329">Because You're Living in a Virtual World</a></td>
+                    <td>Snow Crash
+                        Neuromancer
+                        City of Golden Shadow
+                        Lock In
+                        The Chalk Artist
+                        Tomorrow and Tomorrow
+                        Total Recall
+                        Ready Player One
+                        Warcross
+                        Fallout
+                        The Leveller
+                        In Real Life
+                        Otherworld
+                        The Eye of Minds
+                        Insignia</td>
+                    <td>Stephenson, Neal
+                        Gibson, William
+                        Williams, Tad
+                        Scalzi, John
+                        Goodman, Allegra
+                        Sweterlitsch, Tom
+                        Dick, Philip K.
+                        Cline, Ernest
+                        Lu, Marie
+                        Bond, Gwenda
+                        Durango, Julia
+                        doctorow, cory
+                        Miller, Kirsten
+                        Dashner, James
+                        Kincaid, S. J.</td>
+                    <td>cyberpunk conspiracy online virtual reality video game danger hacker spy intense robots </td>
+                    <td>Graphic Novel, Literary Fiction, Mystery, SciFi, Thriller</td>
+                    <td>Fiction</td>
+                    <td>action-packed character-driven compelling fast-paced intricately plotted strong female protagonist world building</td>
+                    <td>English</td>
+                    <td>Teens, Adults</td>
+                </tr>
+                <tr>
+                    <td><a href="https://wccls.bibliocommons.com/list/share/1297716497_hillsboro_recommends/1613947129">Memorias de mujeres en Español</a></td>
+                    <td>En el país que amamos
+                        Perdón
+                        Viviendo
+                        Una Vida
+                        Cuando era puertorriqueña
+                        Becoming
+                        Una reina como tú
+                        En el cuerpo correcto
+                        Tomboy
+                        Mi mundo adorado
+                        La búsqueda de un sueño
+                    </td>
+                    <td>Guerrero, Diane
+                        Rivera, Chiquis
+                        Lopez, Adamari
+                        Nazario, Ednita
+                        Santiago, Esmeralda
+                        Obama, Michelle
+                        Lachapel, Francisca
+                        Morganna Love
+                        Prince, Liz
+                        Sotomayor, Sonia
+                        Grande, Reyna</td> 
+                    <td>inspiring immigration immigrant humor family cancer</td>
+                    <td>Memoir</td>
+                    <td>Non-fiction</td>
+                    <td>strong female protagonist</td>
+                    <td>Español</td>
+                    <td>Adult</td>
+                </tr>
+                <tr>
+                    <td><a href="https://wccls.bibliocommons.com/list/share/1297716497_hillsboro_recommends/1613938522">Women's Memoirs</a></td>
+                    <td>I Am, I Am, I Am
+                        Just Kids
+                        In the Country We Love
+                        Men We Reaped
+                        The Argonauts
+                        Sex Object
+                        Ordinary Girls
+                        We Are Not Here to Be Bystanders
+                        Hunger
+                        From Scratch
+                        Know My Name
+                        Reading Lolita in Tehran
+                        Furiously Happy
+                        The Princess Diarist
+                        Yes Please
+                        Becoming
+                        Tomboy
+                        The Best We Could Do
+                        Untamed
+                        The Woman Warrior</td>
+                    <td>O'Farrell, Maggie
+                        Smith, Patti
+                        Guerrero, Diane
+                        Ward, Jesmyn
+                        Nelson, Maggie
+                        Valenti, Jessica
+                        Diaz, Jaquira
+                        Sarsour, Linda
+                        Gay, Roxane
+                        Locke, Tembi
+                        Miller, Chanel
+                        Nafisi, Azar
+                        Lawson, Jenny
+                        Fisher, Carrie
+                        Poehler, Amy
+                        Obama, Michelle
+                        Prince, Liz
+                        Bui, Thi
+                        Doyle, Glennon
+                        Kingston, Maxine Hong</td> 
+                    <td>asian autobiography muslim black latina undocumented immigration immigrant racism poverty sexuality </td>
+                    <td>Memoir</td>
+                    <td>Non-fiction</td>
+                    <td>lgbtq+ own voices strong female protagonist</td>
+                    <td>English</td>
+                    <td>Adult</td>
+                </tr>
+                <tr>
+                    <td><a href="">Title</a></td>
+                    <td>Item Titles</td>
+                    <td>Item Authors</td> 
+                    <td>Keywords</td>
+                    <td>Genre</td>
+                    <td>Fic/Non-fic</td>
+                    <td>Appeal</td>
+                    <td>Language</td>
+                    <td>Audience Age</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
     <footer>
 
