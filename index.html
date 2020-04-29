@@ -1,230 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Emily Parrish">
-    <meta name="description" content="A resource for searching staff created lists">
-    <meta name="keywords" content="reader's advisory, book, books, library, libraries">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Emily Parrish" />
+    <meta
+      name="description"
+      content="A resource for searching staff created lists"
+    />
+    <meta
+      name="keywords"
+      content="reader's advisory, book, books, library, libraries"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>HPL Staff List Index</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <img src="img/Logo.svg" alt="Hillsboro Public Library logo">
-        <h1>Staff RA List Index</h1>
+      <img src="img/Logo.svg" alt="Hillsboro Public Library logo" />
+      <h1>Staff RA List Index</h1>
     </header>
     <nav id="byline">
-        <div class="container">
-            <p>Maintained by Emily Parrish | emily.parrish@hillsboro-oregon.gov</p>
-        </div>
+      <div class="container">
+        <p>Maintained by Emily Parrish | emily.parrish@hillsboro-oregon.gov</p>
+      </div>
     </nav>
     <main>
+      <div class="container">
         <p>Search:</p>
-        <input type="text" onkeyup="searchFunction()" placeholder="(by list title, description, book/movie title or author)" title="search">
+        <input
+          type="text"
+          onkeyup="searchFunction()"
+          placeholder="(by list title, description, book/movie title or author)"
+          title="search"
+        />
+      </div>
+      <div class="container">
         <p>Filter by:</p>
-        <ul>
-            <li>Genre (dropdown)</li>
-            <li>Fiction/Non-fiction (dropdown)</li>
-            <li>Appeal (dropdown)</li>
-            <li>Language (dropdown)</li>
-            <li>Audience Age (dropdown)</li>
+        <ul class="limiters">
+          <li>
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">Genre</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#">Fantasy</a>
+                <a href="#">Graphic Novel</a>
+                <a href="#">Historical Fiction</a>
+                <a href="#">History</a>
+                <a href="#">Horror</a>
+                <a href="#">Literary Fiction</a>
+                <a href="#">Memoir</a>
+                <a href="#">Mystery</a>
+                <a href="#">Romance</a>
+                <a href="#">SciFi</a>
+                <a href="#">Social Science</a>
+                <a href="#">Thriller</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">
+                Fiction/Non-fiction
+              </button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#">Fiction</a>
+                <a href="#">Non-fiction</a>
+                <a href="#">Both</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">Appeal</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#">ability diverse</a>
+                <a href="#">action-packed</a>
+                <a href="#">atmospheric</a>
+                <a href="#">bittersweet</a>
+                <a href="#">character-driven</a>
+                <a href="#">compelling</a>
+                <a href="#">culturally diverse</a>
+                <a href="#">fast-paced</a>
+                <a href="#">funny</a>
+                <a href="#">haunting</a>
+                <a href="#">heartwarming</a>
+                <a href="#">intricately plotted</a>
+                <a href="#">leisurely paced</a>
+                <a href="#">lgbtqia+</a>
+                <a href="#">lyrical</a>
+                <a href="#">own voices</a>
+                <a href="#">romantic</a>
+                <a href="#">strong female protagonist</a>
+                <a href="#">suspenseful</a>
+                <a href="#">thought-provoking</a>
+                <a href="#">well-developed characters</a>
+                <a href="#">world building</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">Language</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#">English</a>
+                <a href="#">Español</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">
+                Audience Age
+              </button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#">Adults</a>
+                <a href="#">Children</a>
+                <a href="#">Teens</a>
+              </div>
+            </div>
+          </li>
         </ul>
+      </div>
+      <div class="container">
         <table>
-            <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Item Titles</th>
-                    <th>Item Authors</th>
-                    <th>Keywords</th>
-                    <th>Genre</th>
-                    <th>Fic/Non-fic</th>
-                    <th>Appeal</th>
-                    <th>Language</th>
-                    <th>Audience Age</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><a href="https://wccls.bibliocommons.com/list/share/1297716497_hillsboro_recommends/1620362414">Digging Up Intrigue: Archaeological mysteries, suspense, and thrillers (digital edition)</a></td>
-                    <td>The Crossing Places
-                        Crocodile on the Sandbank
-                        The Shadowy Horses
-                        Labyrinth
-                        A Treacherous Curse
-                        Women of the Dunes
-                        Birthright
-                        The Visitors
-                        The Keepsake
-                        The Crowded Grave
-                        The Cursed Key
-                        Excavation
-                        The Hunt for Atlantis
-                        The Bone Labyrinth
-                        Timeline
-                        The Engines of God</td>
-                    <td>Griffiths, Elly
-                        Peters, Elizabeth
-                        Kearsley, Susanna
-                        Mosse, Kate
-                        RAYBOURN, DEANNA
-                        Maine, Sarah
-                        Roberts, Nora
-                        Beauman, Sally
-                        Gerritsen, Tess
-                        Walker, Martin
-                        Hamilton, Rebecca
-                        Rollins, James
-                        McDermott, Andy
-                        Crichton, Michael
-                        McDevitt, Jack</td>
-                    <td>history techno-thriller escape intrigue adventure danger romance future paranormal egypt</td>
-                    <td>Mystery, Thriller</td>
-                    <td>Fiction</td>
-                    <td>atmospheric character-driven compelling fast-paced haunting strong female protagonist suspenseful well-developed characters</td>
-                    <td>English</td>
-                    <td>Adult</td>
-                </tr>
-                <tr>
-                    <td><a href="https://wccls.bibliocommons.com/list/share/1297716497_hillsboro_recommends/1616214329">Because You're Living in a Virtual World</a></td>
-                    <td>Snow Crash
-                        Neuromancer
-                        City of Golden Shadow
-                        Lock In
-                        The Chalk Artist
-                        Tomorrow and Tomorrow
-                        Total Recall
-                        Ready Player One
-                        Warcross
-                        Fallout
-                        The Leveller
-                        In Real Life
-                        Otherworld
-                        The Eye of Minds
-                        Insignia</td>
-                    <td>Stephenson, Neal
-                        Gibson, William
-                        Williams, Tad
-                        Scalzi, John
-                        Goodman, Allegra
-                        Sweterlitsch, Tom
-                        Dick, Philip K.
-                        Cline, Ernest
-                        Lu, Marie
-                        Bond, Gwenda
-                        Durango, Julia
-                        doctorow, cory
-                        Miller, Kirsten
-                        Dashner, James
-                        Kincaid, S. J.</td>
-                    <td>cyberpunk conspiracy online virtual reality video game danger hacker spy intense robots </td>
-                    <td>Graphic Novel, Literary Fiction, Mystery, SciFi, Thriller</td>
-                    <td>Fiction</td>
-                    <td>action-packed character-driven compelling fast-paced intricately plotted strong female protagonist world building</td>
-                    <td>English</td>
-                    <td>Teens, Adults</td>
-                </tr>
-                <tr>
-                    <td><a href="https://wccls.bibliocommons.com/list/share/1297716497_hillsboro_recommends/1613947129">Memorias de mujeres en Español</a></td>
-                    <td>En el país que amamos
-                        Perdón
-                        Viviendo
-                        Una Vida
-                        Cuando era puertorriqueña
-                        Becoming
-                        Una reina como tú
-                        En el cuerpo correcto
-                        Tomboy
-                        Mi mundo adorado
-                        La búsqueda de un sueño
-                    </td>
-                    <td>Guerrero, Diane
-                        Rivera, Chiquis
-                        Lopez, Adamari
-                        Nazario, Ednita
-                        Santiago, Esmeralda
-                        Obama, Michelle
-                        Lachapel, Francisca
-                        Morganna Love
-                        Prince, Liz
-                        Sotomayor, Sonia
-                        Grande, Reyna</td> 
-                    <td>inspiring immigration immigrant humor family cancer</td>
-                    <td>Memoir</td>
-                    <td>Non-fiction</td>
-                    <td>strong female protagonist</td>
-                    <td>Español</td>
-                    <td>Adult</td>
-                </tr>
-                <tr>
-                    <td><a href="https://wccls.bibliocommons.com/list/share/1297716497_hillsboro_recommends/1613938522">Women's Memoirs</a></td>
-                    <td>I Am, I Am, I Am
-                        Just Kids
-                        In the Country We Love
-                        Men We Reaped
-                        The Argonauts
-                        Sex Object
-                        Ordinary Girls
-                        We Are Not Here to Be Bystanders
-                        Hunger
-                        From Scratch
-                        Know My Name
-                        Reading Lolita in Tehran
-                        Furiously Happy
-                        The Princess Diarist
-                        Yes Please
-                        Becoming
-                        Tomboy
-                        The Best We Could Do
-                        Untamed
-                        The Woman Warrior</td>
-                    <td>O'Farrell, Maggie
-                        Smith, Patti
-                        Guerrero, Diane
-                        Ward, Jesmyn
-                        Nelson, Maggie
-                        Valenti, Jessica
-                        Diaz, Jaquira
-                        Sarsour, Linda
-                        Gay, Roxane
-                        Locke, Tembi
-                        Miller, Chanel
-                        Nafisi, Azar
-                        Lawson, Jenny
-                        Fisher, Carrie
-                        Poehler, Amy
-                        Obama, Michelle
-                        Prince, Liz
-                        Bui, Thi
-                        Doyle, Glennon
-                        Kingston, Maxine Hong</td> 
-                    <td>asian autobiography muslim black latina undocumented immigration immigrant racism poverty sexuality </td>
-                    <td>Memoir</td>
-                    <td>Non-fiction</td>
-                    <td>lgbtq+ own voices strong female protagonist</td>
-                    <td>English</td>
-                    <td>Adult</td>
-                </tr>
-                <tr>
-                    <td><a href="">Title</a></td>
-                    <td>Item Titles</td>
-                    <td>Item Authors</td> 
-                    <td>Keywords</td>
-                    <td>Genre</td>
-                    <td>Fic/Non-fic</td>
-                    <td>Appeal</td>
-                    <td>Language</td>
-                    <td>Audience Age</td>
-                </tr>
-            </tbody>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Item Titles</th>
+              <th>Item Authors</th>
+              <th>Keywords</th>
+              <th>Genre</th>
+              <th>Fic/Non-fic</th>
+              <th>Appeal</th>
+              <th>Language</th>
+              <th>Audience Age</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <a
+                  href="https://wccls.bibliocommons.com/list/share/1297716497_hillsboro_recommends/1628537359"
+                  >Celebrate Your Independent Bookstore (digital edition)</a
+                >
+              </td>
+              <td>
+                The Book Itch The Storied Life of A. J. Fikry How to Find Love
+                in A Bookshop The Bookshop of Yesterdays The Printed Letter
+                Bookshop The Little Paris Bookshop The Bookshop of the Broken
+                Hearted The Bookshop on the Corner Mr. Penumbra's 24-Hour
+                Bookstore The Lost for Words Bookshop Midnight at the Bright
+                Ideas Bookstore The Secret, Book & Scone Society The Cracked
+                Spine Crime and Poetry The Plot Is Murder Footnotes From the
+                World's Greatest Bookstores
+              </td>
+              <td>
+                Nelson, Vaunda Micheaux Zevin, Gabrielle Henry, Veronica
+                Meyerson, Amy Reay, Katherine George, Nina Hillman, Robert
+                Colgan, Jenny Sloan, Robin Butland, Stephanie Sullivan, Matthew
+                Adams, Ellery Shelton, Paige Flower, Amanda Burns, V.M.
+                Eckstein, Bob
+              </td>
+              <td>
+                adventure cozy humor love loss romance mystery magic black
+              </td>
+              <td>Historical Fiction, Literary Fiction, Mystery, Thriller</td>
+              <td>Fiction and Non-fiction</td>
+              <td>
+                character-driven, culturally diverse, funny, lyrical, romantic,
+                strong female protagonist, suspenseful
+              </td>
+              <td>English</td>
+              <td>Adults, Children</td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://wccls.bibliocommons.com/list/share/1297716497_hillsboro_recommends/1626551529"
+                  >What Hillsboro Public Library Staff are Streaming Part 2</a
+                >
+              </td>
+              <td>
+                LUNCH DOODLES Caspar Babypants Narwhal and Jelly Live Sessions
+                Yoga For Beginners 20 Minute Kids Yoga Class Procreate tutorial
+                ipad The Valhalla Murders Stream live concerts npr Son of Rambow
+                Growing Up Smith Altered Carbon Ozark Poldark The 100
+                Detectorists Carnival Row
+              </td>
+              <td>Mo Willems Ben Clanton Frank Lotito Garth Jennings</td>
+              <td>music detective fairy murder wistful love future Indian</td>
+              <td>Historical Fiction, Mystery, SciFi</td>
+              <td>Fiction, Non-fiction</td>
+              <td>
+                action-packed, character-driven, culturally diverse, funny,
+                romantic, suspenseful, thought-provoking
+              </td>
+              <td>English</td>
+              <td>Adults, Children</td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://wccls.bibliocommons.com/list/share/1297716497_hillsboro_recommends/1624882969"
+                  >Podcasts for History Buffs</a
+                >
+              </td>
+              <td>
+                The Memory Palace Cabinet of Curiosities Outliers Footnoting
+                History The Past and The Curious Useless Information Stuff You
+                Missed in History Class The History of Egypt Podcast Sawbones: A
+                Marital Tour of Misguided Medicine You Must Remember This Tides
+                of History The History of China The History of England The
+                British History Podcast
+              </td>
+              <td>
+                David Crowther Patrick Wyman Karina Longworth Sydnee McElroy
+                Holly Frey Tracy Wilson Mick Sullivan
+              </td>
+              <td>audio</td>
+              <td>History</td>
+              <td>Non-fiction</td>
+              <td>atmospheric, culturally diverse, thought-provoking</td>
+              <td>English</td>
+              <td>Adults, Children</td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://wccls.bibliocommons.com/list/share/1297716497_hillsboro_recommends/1623174239"
+                  >HPL at Home: What Library Staff Are Reading</a
+                >
+              </td>
+              <td>
+                Oona Out of Order Sorcery of Thorns The Sisters of the Winter
+                Wood Monstress, Volume 1 Tuesday Mooney Talks to Ghosts We Used
+                to Be Friends Spinning Silver Rosemary and Rue The Ten Thousand
+                Doors of January
+              </td>
+              <td>
+                Montimore, Margarita Rogerson, Margaret Rossner, Rena Liu,
+                Marjorie Racculia, Kate Spalding, Amy Novik, Naomi McGuire,
+                Seanan Harrow, Alix E.
+              </td>
+              <td>
+                time travel sarcastic ghosts family historical mystery magic
+                adventure love fairies
+              </td>
+              <td>Fantasy, Graphic Novel, Literary Fiction, Mystery</td>
+              <td>Fiction</td>
+              <td>
+                bittersweet, character-driven, intricately plotted, romantic,
+                strong female protagonist, world-building
+              </td>
+              <td>English</td>
+              <td>Adults, Teens</td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://wccls.bibliocommons.com/list/share/1297716497_hillsboro_recommends/1620362414"
+                  >Digging Up Intrigue: Archaeological mysteries, suspense, and
+                  thrillers (digital edition)</a
+                >
+              </td>
+              <td>
+                The Crossing Places Crocodile on the Sandbank The Shadowy Horses
+                Labyrinth A Treacherous Curse Women of the Dunes Birthright The
+                Visitors The Keepsake The Crowded Grave The Cursed Key
+                Excavation The Hunt for Atlantis The Bone Labyrinth Timeline The
+                Engines of God
+              </td>
+              <td>
+                Griffiths, Elly Peters, Elizabeth Kearsley, Susanna Mosse, Kate
+                RAYBOURN, DEANNA Maine, Sarah Roberts, Nora Beauman, Sally
+                Gerritsen, Tess Walker, Martin Hamilton, Rebecca Rollins, James
+                McDermott, Andy Crichton, Michael McDevitt, Jack
+              </td>
+              <td>
+                history techno-thriller escape intrigue adventure danger romance
+                future paranormal egypt
+              </td>
+              <td>Mystery, Thriller</td>
+              <td>Fiction</td>
+              <td>
+                atmospheric, character-driven, compelling, fast-paced, haunting,
+                strong female protagonist, suspenseful, well-developed
+                characters
+              </td>
+              <td>English</td>
+              <td>Adults</td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://wccls.bibliocommons.com/list/share/1297716497_hillsboro_recommends/1616214329"
+                  >Because You're Living in a Virtual World</a
+                >
+              </td>
+              <td>
+                Snow Crash Neuromancer City of Golden Shadow Lock In The Chalk
+                Artist Tomorrow and Tomorrow Total Recall Ready Player One
+                Warcross Fallout The Leveller In Real Life Otherworld The Eye of
+                Minds Insignia
+              </td>
+              <td>
+                Stephenson, Neal Gibson, William Williams, Tad Scalzi, John
+                Goodman, Allegra Sweterlitsch, Tom Dick, Philip K. Cline, Ernest
+                Lu, Marie Bond, Gwenda Durango, Julia doctorow, cory Miller,
+                Kirsten Dashner, James Kincaid, S. J.
+              </td>
+              <td>
+                cyberpunk conspiracy online virtual reality video game danger
+                hacker spy intense robots
+              </td>
+              <td>Graphic Novel, Literary Fiction, Mystery, SciFi, Thriller</td>
+              <td>Fiction</td>
+              <td>
+                action-packed, character-driven, compelling, fast-paced,
+                intricately plotted, strong female protagonist, world building
+              </td>
+              <td>English</td>
+              <td>Teens, Adults</td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://wccls.bibliocommons.com/list/share/1297716497_hillsboro_recommends/1613947129"
+                  >Memorias de mujeres en Español</a
+                >
+              </td>
+              <td>
+                En el país que amamos Perdón Viviendo Una Vida Cuando era
+                puertorriqueña Becoming Una reina como tú En el cuerpo correcto
+                Tomboy Mi mundo adorado La búsqueda de un sueño
+              </td>
+              <td>
+                Guerrero, Diane Rivera, Chiquis Lopez, Adamari Nazario, Ednita
+                Santiago, Esmeralda Obama, Michelle Lachapel, Francisca Morganna
+                Love Prince, Liz Sotomayor, Sonia Grande, Reyna
+              </td>
+              <td>inspiring immigration immigrant humor family cancer</td>
+              <td>Memoir</td>
+              <td>Non-fiction</td>
+              <td>culturally diverse, strong female protagonist</td>
+              <td>Español</td>
+              <td>Adults</td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://wccls.bibliocommons.com/list/share/1297716497_hillsboro_recommends/1613938522"
+                  >Women's Memoirs</a
+                >
+              </td>
+              <td>
+                I Am, I Am, I Am Just Kids In the Country We Love Men We Reaped
+                The Argonauts Sex Object Ordinary Girls We Are Not Here to Be
+                Bystanders Hunger From Scratch Know My Name Reading Lolita in
+                Tehran Furiously Happy The Princess Diarist Yes Please Becoming
+                Tomboy The Best We Could Do Untamed The Woman Warrior
+              </td>
+              <td>
+                O'Farrell, Maggie Smith, Patti Guerrero, Diane Ward, Jesmyn
+                Nelson, Maggie Valenti, Jessica Diaz, Jaquira Sarsour, Linda
+                Gay, Roxane Locke, Tembi Miller, Chanel Nafisi, Azar Lawson,
+                Jenny Fisher, Carrie Poehler, Amy Obama, Michelle Prince, Liz
+                Bui, Thi Doyle, Glennon Kingston, Maxine Hong
+              </td>
+              <td>
+                asian autobiography muslim black latina undocumented immigration
+                immigrant racism poverty sexuality
+              </td>
+              <td>Memoir</td>
+              <td>Non-fiction</td>
+              <td>culturally diverse, lgbtqia+, strong female protagonist</td>
+              <td>English</td>
+              <td>Adults</td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://wccls.bibliocommons.com/list/share/1297716497_hillsboro_recommends/1612014769"
+                  >Hillsboro Staff Picks: Podcasts</a
+                >
+              </td>
+              <td>
+                Punch Up the Jam Starship Iris Heavyweight You're Wrong About
+                Passenger List Dolly Parton's America The Message Reply All The
+                Dream The Adventure Zone Articles of Interest City of the Future
+                Criminal 99% Invisible You Must Remember This Wonderful On the
+                Media Flash Forward Personal Best
+              </td>
+              <td>
+                Miel Bredouw Demi Adejuyigbe Johnathan Goldstein Michael Hobbes
+                Sarah Marshall PJ Vogt Jane Marie Dann Gallucci McElroy Avery
+                Trufelman Phoebe Judge Karina Longworth
+              </td>
+              <td>
+                audio psychology science journalism Hollywood architecture
+                design true crime future music
+              </td>
+              <td>Fantasy, History, SciFi, Thriller</td>
+              <td>Fiction and Non-fiction</td>
+              <td>compelling, culturally diverse, funny, thought-provoking</td>
+              <td>English</td>
+              <td>Adults</td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://wccls.bibliocommons.com/list/share/1297716497_hillsboro_recommends/1606924059"
+                  >Staff Recommended "Always Available" Audiobooks</a
+                >
+              </td>
+              <td>
+                Citizen The Ghost Map So You Want to Talk About Race Stiff Gulp
+                The Screwtape Letters A Tale for the Time Being Penric's Demon
+                River of Teeth Lady Osbaldestone's Christmas Goose Brave New
+                World Hunter Gone Splintered The Birchbark House Insignificant
+                Events in the Life of A Cactus
+              </td>
+              <td>
+                Rankine, Claudia Johnson, Steven Oluo, Ijeoma Roach, Mary Lewis,
+                C. S. Ozeki, Ruth Bujold, Lois Mcmaster Gailey, Sarah Laurens,
+                Stephanie Huxley, Aldous Lackey, Mercedes Grant, Michael Howard,
+                A. G. Erdrich, Louise Bowling, Dusti
+              </td>
+              <td>
+                dystopian poetry satire family history Native Americans
+                friendship
+              </td>
+              <td>Fantasy, Literary Fiction, Mystery, Romance, SciFi</td>
+              <td>Fiction and Non-fiction</td>
+              <td>
+                ability diverse, bittersweet, culturally diverse, funny,
+                lgbtqia+, romantic, thought-provoking, well-developed
+                characters/td>
+              </td>
+              <td>English</td>
+              <td>Adults, Children, Teens</td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://wccls.bibliocommons.com/list/share/1297716497_hillsboro_recommends/1597344489"
+                  >Political Topics to Bring Us Together</a
+                >
+              </td>
+              <td>
+                The Soul of America I Think You're Wrong (but I'm Listening) A
+                Guide to Grace-filled Political Conversations Love your Enemies
+                How Decent People Can Save America From the Culture of Contempt
+                The Conservative Sensibility Doubt A History : the Great
+                Doubters and Their Legacy of Innovation Them Why We Hate Each
+                Other and How to Heal Republican Like Me How I Left the Liberal
+                Bubble and Learned to Love the Right The Righteous Mind Why Good
+                People Are Divided by Politics and Religion Tribe On Homecoming
+                and Belonging Talking Across the Divide How to Communicate With
+                People You Disagree With and Maybe Even Change the World Why
+                We're Polarized Collaborating With the Enemy How to Work With
+                People You Don't Agree With or Like or Trust
+              </td>
+              <td>
+                Meacham, Jon Holland, Sarah Stewart Brooks, Arthur C. Will,
+                George F. Hecht, Jennifer Michael Sasse, Benjamin E. Stern, Ken
+                Haidt, Jonathan Junger, Sebastian Lee, Justin Klein, Ezra
+                Kahane, Adam
+              </td>
+              <td>polisci empathy nationalism</td>
+              <td>Social Science</td>
+              <td>Non-fiction</td>
+              <td>thought-provoking</td>
+              <td>English</td>
+              <td>Adults</td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://wccls.bibliocommons.com/list/share/1297716497_hillsboro_recommends/1595063809"
+                  >Find Your Next: Short Stories</a
+                >
+              </td>
+              <td>
+                How Long 'til Black Future Month? This Is How You Lose Her Her
+                Body and Other Parties Ayiti American Innovations A Good Man Is
+                Hard to Find, and Other Stories The Thing Around your Neck A
+                People's Future of the United States Speculative Fiction From 25
+                Extraordinary Writers Growing Things What Is Not Yours Is Not
+                Yours No One Belongs Here More Than You
+              </td>
+              <td>
+                Jemisin, N. K. Díaz, Junot Machado, Carmen Maria Gay, Roxane
+                Galchen, Rivka O'Connor, Flannery Adichie, Chimamanda Ngozi
+                Tremblay, Paul Oyeyemi, Helen July, Miranda
+              </td>
+              <td>
+                unconventional ghosts love complex dragons dystopian hope family
+                southern gothic Haiti law order
+              </td>
+              <td>Literary Fiction, Horror, SciFi</td>
+              <td>Fiction</td>
+              <td>
+                atmospheric, bittersweet, character-driven, culturally diverse,
+                haunting, leisurely paced, strong female protagonist,
+                suspenseful
+              </td>
+              <td>English</td>
+              <td>Adults</td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://wccls.bibliocommons.com/list/share/1297716497_hillsboro_recommends/1589454029"
+                  >Books That Changed Us: The Artists of Bag&Baggage</a
+                >
+              </td>
+              <td>
+                The Bad Beginning The Family Under the Bridge The Autobiography
+                of Malcolm X Basic Writings of Nietzsche Madame Bovary
+              </td>
+              <td>
+                Snicket, Lemony Carlson, Natalie Savage Nietzsche, Friedrich
+                Wilhelm Flaubert, Gustave
+              </td>
+              <td>feminist race family home civil rights</td>
+              <td>Literary Fiction, Memoir, Philosophy</td>
+              <td>Fic/Non-fic</td>
+              <td>culturally diverse, funny, thought-provoking</td>
+              <td>English</td>
+              <td>Adults, Children</td>
+            </tr>
+            <tr>
+              <td><a href="">Title</a></td>
+              <td>Item Titles</td>
+              <td>Item Authors</td>
+              <td>Keywords</td>
+              <td>Genre</td>
+              <td>Fic/Non-fic</td>
+              <td>Appeal</td>
+              <td>Language</td>
+              <td>Audience Age</td>
+            </tr>
+          </tbody>
         </table>
+      </div>
     </main>
-    <footer>
-
-    </footer>
-</body>
-
+    <footer></footer>
+  </body>
 </html>

@@ -1,75 +1,177 @@
+html {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 16px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
 }
 
 header {
-    background-image: url("../img/Mountains.jpg");
-    background-size: cover;
-    background-position: top;
-    margin-bottom: 0px;
-    text-align: center;
+  background-image: url("../img/Mountains.jpg");
+  background-size: cover;
+  background-position: top;
+  margin-bottom: 0px;
+  text-align: center;
 }
 
 header img {
-    max-width: 350px;
-    margin: 0px;
+  max-width: 350px;
+  margin: 0px;
 }
 h1 {
-    color: white;
-    margin-top: 0px;
+  color: white;
+  margin-top: 0px;
 }
 
 #byline {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 #byline p {
-    text-align: right;
-    font-size: 13px;
+  text-align: right;
+  font-size: 13px;
 }
 
 main {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 input {
-    width: 100%;
+  width: 100%;
+}
+
+.limiters {
+  list-style: none;
+  padding: 0px;
+}
+
+.limiters li {
+  display: flex;
+  max-width: fit-content;
+  padding-right: 1rem;
+  justify-content: flex-start;
+}
+
+.dropbtn {
+  background-color: #007a33;
+  color: white;
+  padding: 12px;
+  border: none;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #062d74;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
 }
 
 table {
-    border: 1px solid;
-    border-collapse: collapse;
+  border: 1px solid;
+  border-collapse: collapse;
 }
 
 th {
-    background-color: #007a33;
-    color: white;
+  background-color: #007a33;
+  color: white;
 }
 
-th, td {
-    text-align: center;
-    padding: 5px;
-    border-bottom: 1px solid;
+th,
+td {
+  text-align: center;
+  padding: 5px;
+  border-bottom: 1px solid;
 }
 
 tbody tr:hover {
-    background-color: #f5f5f5;
+  background-color: #f5f5f5;
 }
 
 table a:link {
-    color: #007a33;
-    text-decoration: none;
+  color: #007a33;
+  text-decoration: none;
 }
 
 table a:visited {
-    color: #062d74;
-    text-decoration: none;
+  color: #062d74;
+  text-decoration: none;
 }
 
 table a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
   }
 
+  .limiters {
+    display: flex;
+  }
+
+  .limiters li {
+    flex-basis: 20%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+
+  .limiters {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
