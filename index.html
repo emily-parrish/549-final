@@ -32,96 +32,94 @@
     </nav>
     <main>
       <div class="container">
-        <p>Search:</p>
-        <input
-          type="text"
-          onkeyup="searchFunction()"
-          placeholder="(by list title, description, book/movie title or author)"
-          title="search"
-        />
+        <div class="form-group">
+          <p><h3>Search:</h3></p>
+          <input
+            type="text"
+            class="form-control"
+            id="search-bar"
+            placeholder="(by list title, description, book/movie title or author)"
+          />
+        </div>
       </div>
       <div class="container">
-        <p>Filter by:</p>
+        <p><h3>Filter by:</h3></p>
         <ul class="limiters">
           <li>
             <div class="dropdown">
-              <button onclick="myFunction()" class="dropbtn">Genre</button>
-              <div id="myDropdown" class="dropdown-content">
-                <a href="#">Fantasy</a>
-                <a href="#">Graphic Novel</a>
-                <a href="#">Historical Fiction</a>
-                <a href="#">History</a>
-                <a href="#">Horror</a>
-                <a href="#">Literary Fiction</a>
-                <a href="#">Memoir</a>
-                <a href="#">Mystery</a>
-                <a href="#">Romance</a>
-                <a href="#">SciFi</a>
-                <a href="#">Social Science</a>
-                <a href="#">Thriller</a>
-              </div>
+              <select class="dropbtn" id="genre-filter">
+                <option value="">Genre</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="graphic novel">Graphic Novel</option>
+                <option value="historical fiction">Historical Fiction</option>
+                <option value="history">History</option>
+                <option value="horror">Horror</option>
+                <option value="literary fiction">Literary Fiction</option>
+                <option value="memoir">Memoir</option>
+                <option value="mystery">Mystery</option>
+                <option value="romance">Romance</option>
+                <option value="scifi">SciFi</option>
+                <option value="social science">Social Science</option>
+                <option value="thriller">Thriller</option>
+              </select>
             </div>
           </li>
           <li>
             <div class="dropdown">
-              <button onclick="myFunction()" class="dropbtn">
-                Fiction/Non-fiction
-              </button>
-              <div id="myDropdown" class="dropdown-content">
-                <a href="#">Fiction</a>
-                <a href="#">Non-fiction</a>
-                <a href="#">Both</a>
-              </div>
+              <select class="dropbtn" id="ficnonfic-filter">
+                <option value="">Fiction/Non-fiction</option>
+                <option value="fiction">Fiction</option>
+                <option value="non-fiction">Non-fiction</option>
+                <option value="fic and nonfic">Both</option>
+              </select>
             </div>
           </li>
           <li>
             <div class="dropdown">
-              <button onclick="myFunction()" class="dropbtn">Appeal</button>
-              <div id="myDropdown" class="dropdown-content">
-                <a href="#">ability diverse</a>
-                <a href="#">action-packed</a>
-                <a href="#">atmospheric</a>
-                <a href="#">bittersweet</a>
-                <a href="#">character-driven</a>
-                <a href="#">compelling</a>
-                <a href="#">culturally diverse</a>
-                <a href="#">fast-paced</a>
-                <a href="#">funny</a>
-                <a href="#">haunting</a>
-                <a href="#">heartwarming</a>
-                <a href="#">intricately plotted</a>
-                <a href="#">leisurely paced</a>
-                <a href="#">lgbtqia+</a>
-                <a href="#">lyrical</a>
-                <a href="#">own voices</a>
-                <a href="#">romantic</a>
-                <a href="#">strong female protagonist</a>
-                <a href="#">suspenseful</a>
-                <a href="#">thought-provoking</a>
-                <a href="#">well-developed characters</a>
-                <a href="#">world building</a>
-              </div>
+              <select class="dropbtn" id="appeal-filter">
+                <option value="">Appeal</option>
+                <option value="ability diverse">ability diverse</option>
+                <option value="action-packed">action-packed</option>
+                <option value="atmospheric">atmospheric</option>
+                <option value="bittersweet">bittersweet</option>
+                <option value="character-driven">character-driven</option>
+                <option value="compelling">compelling</option>
+                <option value="culturally diverse">culturally diverse</option>
+                <option value="fast-paced">fast-paced</option>
+                <option value="funny">funny</option>
+                <option value="haunting">haunting</option>
+                <option value="heartwarming">heartwarming</option>
+                <option value="intricately">intricately plotted</option>
+                <option value="leisurely paced">leisurely paced</option>
+                <option value="lgbtqia+">lgbtqia+</option>
+                <option value="lyrical">lyrical</option>
+                <option value="own voices">own voices</option>
+                <option value="romantic">romantic</option>
+                <option value="strong female protagonist">strong female protagonist</option>
+                <option value="suspenseful">suspenseful</option>
+                <option value="thought-provoking">thought-provoking</option>
+                <option value="well-developed characters">well-developed characters</option>
+                <option value="world building">world building</option>
+              </select>
             </div>
           </li>
           <li>
             <div class="dropdown">
-              <button onclick="myFunction()" class="dropbtn">Language</button>
-              <div id="myDropdown" class="dropdown-content">
-                <a href="#">English</a>
-                <a href="#">Español</a>
-              </div>
+                <select class="dropbtn" id="language-filter">
+                <option value="">Language</option>
+                <option value="english">English</option>
+                <option value="espanol">Español</option>
+                </select>
             </div>
           </li>
           <li>
             <div class="dropdown">
-              <button onclick="myFunction()" class="dropbtn">
-                Audience Age
-              </button>
-              <div id="myDropdown" class="dropdown-content">
-                <a href="#">Adults</a>
-                <a href="#">Children</a>
-                <a href="#">Teens</a>
-              </div>
+              <select class="dropbtn" id="age-filter">
+                <option value="">Audience Age</option>
+                <option value="adults">Adults</option>
+                <option value="children">Children</option>
+                <option value="teens">Teens</option>
+            </select>
             </div>
           </li>
         </ul>
@@ -170,7 +168,7 @@
                 adventure cozy humor love loss romance mystery magic black
               </td>
               <td>Historical Fiction, Literary Fiction, Mystery, Thriller</td>
-              <td>Fiction and Non-fiction</td>
+              <td>Fiction, Non-fiction</td>
               <td>
                 character-driven, culturally diverse, funny, lyrical, romantic,
                 strong female protagonist, suspenseful
@@ -406,7 +404,7 @@
                 design true crime future music
               </td>
               <td>Fantasy, History, SciFi, Thriller</td>
-              <td>Fiction and Non-fiction</td>
+              <td>Fiction, Non-fiction</td>
               <td>compelling, culturally diverse, funny, thought-provoking</td>
               <td>English</td>
               <td>Adults</td>
@@ -436,11 +434,10 @@
                 friendship
               </td>
               <td>Fantasy, Literary Fiction, Mystery, Romance, SciFi</td>
-              <td>Fiction and Non-fiction</td>
+              <td>Fiction, Non-fiction</td>
               <td>
                 ability diverse, bittersweet, culturally diverse, funny,
-                lgbtqia+, romantic, thought-provoking, well-developed
-                characters/td>
+                lgbtqia+, romantic, thought-provoking, well-developed characters
               </td>
               <td>English</td>
               <td>Adults, Children, Teens</td>
@@ -526,25 +523,25 @@
               </td>
               <td>
                 Snicket, Lemony Carlson, Natalie Savage Nietzsche, Friedrich
-                Wilhelm Flaubert, Gustave
+                Malcolm X Wilhelm Flaubert, Gustave
               </td>
               <td>feminist race family home civil rights</td>
               <td>Literary Fiction, Memoir, Philosophy</td>
-              <td>Fic/Non-fic</td>
+              <td>Fiction, Non-fiction</td>
               <td>culturally diverse, funny, thought-provoking</td>
               <td>English</td>
               <td>Adults, Children</td>
             </tr>
             <tr>
-              <td><a href="">Title</a></td>
-              <td>Item Titles</td>
-              <td>Item Authors</td>
-              <td>Keywords</td>
-              <td>Genre</td>
-              <td>Fic/Non-fic</td>
-              <td>Appeal</td>
-              <td>Language</td>
-              <td>Audience Age</td>
+              <td><a href=""> LIST TITLE</a></td>
+              <td>ITEM TITLES</td>
+              <td>ITEM AUTHORS</td>
+              <td>KEYWORDS</td>
+              <td>GENRE</td>
+              <td>FIC/NON-FIC</td>
+              <td>APPEAL</td>
+              <td>LANGUAGE</td>
+              <td>AUDIENCE AGE</td>
             </tr>
           </tbody>
         </table>

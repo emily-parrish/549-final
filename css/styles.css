@@ -113,6 +113,7 @@ input {
 table {
   border: 1px solid;
   border-collapse: collapse;
+  margin-bottom: 1rem;
 }
 
 th {
