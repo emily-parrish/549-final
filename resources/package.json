@@ -1,0 +1,24 @@
+{
+  "name": "549-final",
+  "version": "1.0.0",
+  "description": "The purpose of this project is to provide Hillsboro Public Library staff with a searchable index of staff created lists.",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/browser-sync  start --server --files='**/*'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emily-parrish/549-final.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emily-parrish/549-final/issues"
+  },
+  "homepage": "https://github.com/emily-parrish/549-final#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}
