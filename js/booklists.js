@@ -1,7 +1,7 @@
 const BOOKLISTS = [
   {
     title: "Celebrate Your Independent Bookstore (digital edition)",
-    "item-titles": [
+    itemtitles: [
       "The Book Itch",
       "The Storied Life of A. J. Fikry",
       "How to Find Love in A Bookshop",
@@ -18,7 +18,7 @@ const BOOKLISTS = [
       "Crime and Poetry The Plot Is Murder",
       "Footnotes From the World's Greatest Bookstores",
     ],
-    "item-authors": [
+    itemauthors: [
       "Vaunda Micheaux Nelson",
       "Gabrielle Zevin",
       "Veronica Henry",
@@ -48,7 +48,7 @@ const BOOKLISTS = [
       "black",
     ],
     genre: ["Historical Fiction", "Literary Fiction", "Mystery", "Thriller"],
-    "fic-nonfic": ["Fiction", "Non-fiction"],
+    ficnonfic: ["Fiction", "Non-fiction"],
     appeal: [
       "character-driven",
       "culturally diverse",
@@ -59,11 +59,11 @@ const BOOKLISTS = [
       "suspenseful",
     ],
     language: "English",
-    "audience-age": ["Adults", "Children"],
+    audienceage: ["Adults", "Children"],
   },
   {
     title: "What Hillsboro Public Library Staff are Streaming Part 2",
-    "item-titles": [
+    itemtitles: [
       "LUNCH DOODLES",
       "Caspar Babypants",
       "Narwhal and Jelly Live Sessions",
@@ -80,7 +80,7 @@ const BOOKLISTS = [
       "Detectorists",
       "Carnival Row",
     ],
-    "item-authors": [
+    itemauthors: [
       "Mo Willems",
       "Ben Clanton",
       "Frank Lotito",
@@ -97,7 +97,7 @@ const BOOKLISTS = [
       "Indian",
     ],
     genre: ["Historical Fiction", "Mystery", "SciFi"],
-    "fic-nonfic": ["Fiction", "Non-fiction"],
+    ficnonfic: ["Fiction", "Non-fiction"],
     appeal: [
       "action-packed",
       "character-driven",
@@ -108,11 +108,11 @@ const BOOKLISTS = [
       "thought-provoking",
     ],
     language: "English",
-    "audience-age": ["Adults", "Children"],
+    audienceage: ["Adults", "Children"],
   },
   {
     title: "Podcasts for History Buffs",
-    "item-titles": [
+    itemtitles: [
       "The Memory Palace",
       "Cabinet of Curiosities",
       "Outliers",
@@ -128,7 +128,7 @@ const BOOKLISTS = [
       "The History of England",
       "The British History Podcast",
     ],
-    "item-authors": [
+    itemauthors: [
       "David Crowther",
       "Patrick Wyman",
       "Karina Longworth",
@@ -139,14 +139,14 @@ const BOOKLISTS = [
     ],
     keywords: "audio",
     genre: "History",
-    "fic-nonfic": "Non-fiction",
+    ficnonfic: "Non-fiction",
     appeal: ["atmospheric", "culturally diverse", "thought-provoking"],
     language: "English",
-    "audience-age": ["Adults", "Children"],
+    audienceage: ["Adults", "Children"],
   },
   {
     title: "HPL at Home: What Library Staff Are Reading",
-    "item-titles": [
+    itemtitles: [
       "Oona Out of Order",
       "Sorcery of Thorns",
       "The Sisters of the Winter Wood",
@@ -157,7 +157,7 @@ const BOOKLISTS = [
       "Rosemary and Rue",
       "The Ten Thousand Doors of January",
     ],
-    "item-authors": [
+    itemauthors: [
       "Margarita Montimore",
       "Margaret Rogerson",
       "Rena Rossner",
@@ -181,7 +181,7 @@ const BOOKLISTS = [
       "fairies",
     ],
     genre: ["Fantasy", "Graphic Novel", "Literary Fiction", "Mystery"],
-    "fic-nonfic": "Fiction",
+    ficnonfic: "Fiction",
     appeal: [
       "bittersweet",
       "character-driven",
@@ -191,12 +191,12 @@ const BOOKLISTS = [
       "world-building",
     ],
     language: "English",
-    "audience-age": ["Adults", "Teens"],
+    audienceage: ["Adults", "Teens"],
   },
   {
     title:
       "Digging Up Intrigue: Archaeological mysteries, suspense, and thrillers (digital edition)",
-    "item-titles": [
+    itemtitles: [
       "The Crossing Places",
       "Crocodile on the Sandbank",
       "The Shadowy Horses",
@@ -214,7 +214,7 @@ const BOOKLISTS = [
       "Timeline",
       "The Engines of God",
     ],
-    "item-authors": [
+    itemauthors: [
       "Elly Griffiths",
       "Elizabeth Peters",
       "Susanna Kearsley",
@@ -244,7 +244,7 @@ const BOOKLISTS = [
       "egypt",
     ],
     genre: ["Mystery", "Thriller"],
-    "fic-nonfic": "Fiction",
+    ficnonfic: "Fiction",
     appeal: [
       "atmospheric",
       "character-driven",
@@ -256,11 +256,11 @@ const BOOKLISTS = [
       "well-developed characters",
     ],
     language: "English",
-    "audience-age": "Adults",
+    audienceage: "Adults",
   },
   {
     title: "Because You're Living in a Virtual World",
-    "item-titles": [
+    itemtitles: [
       "Snow Crash",
       "Neuromancer",
       "City of Golden Shadow",
@@ -277,7 +277,7 @@ const BOOKLISTS = [
       "The Eye of Minds",
       "Insignia",
     ],
-    "item-authors": [
+    itemauthors: [
       "Neal Stephenson",
       "William Gibson",
       "Tad Williams",
@@ -313,7 +313,7 @@ const BOOKLISTS = [
       "SciFi",
       "Thriller",
     ],
-    "fic-nonfic": "Fiction",
+    ficnonfic: "Fiction",
     appeal: [
       "action-packed",
       "character-driven",
@@ -324,11 +324,11 @@ const BOOKLISTS = [
       "world building",
     ],
     language: "English",
-    "audience-age": ["Teens", "Adults"],
+    audienceage: ["Teens", "Adults"],
   },
   {
     title: "Memorias de mujeres en Español",
-    "item-titles": [
+    itemtitles: [
       "En el país que amamos",
       "Perdón",
       "Viviendo",
@@ -341,7 +341,7 @@ const BOOKLISTS = [
       "Mi mundo adorado",
       "La búsqueda de un sueño",
     ],
-    "item-authors": [
+    itemauthors: [
       "Diane Guerrero",
       "Chiquis Rivera",
       "Adamari Lopez",
@@ -363,14 +363,14 @@ const BOOKLISTS = [
       "cancer",
     ],
     genre: "Memoir",
-    "fic-nonfic": "Non-fiction",
+    ficnonfic: "Non-fiction",
     appeal: ["culturally diverse", "strong female protagonist"],
     language: "Español",
-    "audience-age": "Adults",
+    audienceage: "Adults",
   },
   {
     title: "Women's Memoirs",
-    "item-titles": [
+    itemtitles: [
       "I Am, I Am, I Am",
       "Just Kids",
       "In the Country We Love",
@@ -392,7 +392,7 @@ const BOOKLISTS = [
       "Untamed",
       "The Woman Warrior",
     ],
-    "item-authors": [
+    itemauthors: [
       "Maggie O'Farrell",
       "Patti Smith",
       "Diane Guerrero",
@@ -428,14 +428,14 @@ const BOOKLISTS = [
       "sexuality",
     ],
     genre: "Memoir",
-    "fic-nonfic": "Non-fiction",
+    ficnonfic: "Non-fiction",
     appeal: ["culturally diverse", "lgbtqia+", "strong female protagonist"],
     language: "English",
-    "audience-age": "Adults",
+    audienceage: "Adults",
   },
   {
     title: "Hillsboro Staff Picks: Podcasts",
-    "item-titles": [
+    itemtitles: [
       "Punch Up the Jam",
       "Starship Iris",
       "Heavyweight",
@@ -456,7 +456,7 @@ const BOOKLISTS = [
       "Flash Forward",
       "Personal Best",
     ],
-    "item-authors": [
+    itemauthors: [
       "Miel Bredouw",
       "Demi Adejuyigbe",
       "Johnathan Goldstein",
@@ -483,14 +483,14 @@ const BOOKLISTS = [
       "music",
     ],
     genre: ["Fantasy", "History", "SciFi", "Thriller"],
-    "fic-nonfic": ["Fiction", "Non-fiction"],
+    ficnonfic: ["Fiction", "Non-fiction"],
     appeal: ["compelling", "culturally diverse", "funny", "thought-provoking"],
     language: "English",
-    "audience-age": "Adults",
+    audienceage: "Adults",
   },
   {
     title: 'Staff Recommended "Always Available" Audiobooks',
-    "item-titles": [
+    itemtitles: [
       "Citizen",
       "The Ghost Map",
       "So You Want to Talk About Race",
@@ -508,7 +508,7 @@ const BOOKLISTS = [
       "The Birchbark House",
       "Insignificant Events in the Life of A Cactus",
     ],
-    "item-authors": [
+    itemauthors: [
       "Claudia Rankine",
       "Steven Johnson",
       "Ijeoma Oluo",
@@ -535,7 +535,7 @@ const BOOKLISTS = [
       "friendship",
     ],
     genre: ["Fantasy, Literary Fiction, Mystery, Romance, SciFi"],
-    "fic-nonfic": ["Fiction", "Non-fiction"],
+    ficnonfic: ["Fiction", "Non-fiction"],
     appeal: [
       "ability diverse",
       "bittersweet",
@@ -547,11 +547,11 @@ const BOOKLISTS = [
       "well-developed characters",
     ],
     language: "English",
-    "audience-age": ["Adults", "Children", "Teens"],
+    audienceage: ["Adults", "Children", "Teens"],
   },
   {
     title: "Political Topics to Bring Us Together",
-    "item-titles": [
+    itemtitles: [
       "The Soul of America",
       "I Think You're Wrong (but I'm Listening) A Guide to Grace-filled Political Conversations",
       "Love your Enemies How Decent People Can Save America From the Culture of Contempt",
@@ -565,7 +565,7 @@ const BOOKLISTS = [
       "Why We're Polarized",
       "Collaborating With the Enemy How to Work With People You Don't Agree With or Like or Trust",
     ],
-    "item-authors": [
+    itemauthors: [
       "Jon Meacham",
       "Sarah Stewart Holland",
       "Arthur C. Brooks",
@@ -581,14 +581,14 @@ const BOOKLISTS = [
     ],
     keywords: ["polisci", "empathy", "nationalism"],
     genre: "Social Science",
-    "fic-nonfic": "Non-fiction",
+    ficnonfic: "Non-fiction",
     appeal: "thought-provoking",
     language: "English",
-    "audience-age": "Adults",
+    audienceage: "Adults",
   },
   {
     title: "Find Your Next: Short Stories",
-    "item-titles": [
+    itemtitles: [
       "How Long 'til Black Future Month?",
       "This Is How You Lose Her",
       "Her Body and Other Parties",
@@ -601,7 +601,7 @@ const BOOKLISTS = [
       "What Is Not Yours Is Not Yours",
       "No One Belongs Here More Than You",
     ],
-    "item-authors": [
+    itemauthors: [
       "N. K. Jemisin",
       "Junot Díaz",
       "Carmen Maria Machado",
@@ -628,7 +628,7 @@ const BOOKLISTS = [
       "order",
     ],
     genre: ["Literary Fiction, Horror, SciFi"],
-    "fic-nonfic": "Fiction",
+    ficnonfic: "Fiction",
     appeal: [
       "atmospheric",
       "bittersweet",
@@ -640,18 +640,18 @@ const BOOKLISTS = [
       "suspenseful",
     ],
     language: "English",
-    "audience-age": "Adults",
+    audienceage: "Adults",
   },
   {
     title: "Books That Changed Us: The Artists of Bag&Baggage",
-    "item-titles": [
+    itemtitles: [
       "The Bad Beginning",
       "The Family Under the Bridge",
       "The Autobiography of Malcolm X",
       "Basic Writings of Nietzsche",
       "Madame Bovary",
     ],
-    "item-authors": [
+    itemauthors: [
       "Lemony Snicket",
       "Natalie Savage Carlson",
       "Friedrich Wilhelm Nietzsche",
@@ -659,9 +659,9 @@ const BOOKLISTS = [
     ],
     keywords: ["feminist", "race", "family", "home", "civil rights"],
     genre: ["Literary Fiction", "Memoir", "Philosophy"],
-    "fic-nonfic": ["Fiction", "Non-fiction"],
+    ficnonfic: ["Fiction", "Non-fiction"],
     appeal: ["culturally diverse", "funny", "thought-provoking"],
     language: "English",
-    "audience-age": ["Adults", "Children"],
+    audienceage: ["Adults", "Children"],
   },
 ];
