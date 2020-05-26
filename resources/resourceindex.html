@@ -43,7 +43,7 @@
         <h3>I'm Looking For:</h3>
         <div class="dropdown">
           <select class="dropbtn" id="resource-filter">
-            <option value="">(select)</option>
+            <option value="viewall">(select/clear)</option>
             <option value="lessonplans">Lesson Plans</option>
             <option value="professionaldev">Professional Development</option>
             <option value="nationalorgs">National Organizations</option>
@@ -51,20 +51,23 @@
           </select>
         </div>
       </div>
-      <div class="card-container pt-5">
-        <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
-            <div class="card shadow">
+      <div class="card-container">
+        <ul class="resource">
+          <li id="lessonplans professionaldev">
+            <div class="card">
               <img
                 src="../resources/img/edutopia.jpg"
-                class="card-img-top"
+                class="card-img"
                 alt="edutopia image featuring historical black figures"
               />
               <div class="card-body">
                 <h5 class="card-title">
-                  <a href="">Culturally Responsive Teaching</a>
+                  <a
+                    href="https://www.edutopia.org/topic/culturally-responsive-teaching"
+                    >Culturally Responsive Teaching</a
+                  >
                 </h5>
-                <h6 class="card-subtitle mb-2">
+                <h6 class="card-subtitle">
                   Edutopia
                 </h6>
                 <p class="card-text">
@@ -72,50 +75,229 @@
                 </p>
               </div>
             </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
-            <div class="card shadow">
+          </li>
+          <li id="nationalorgs professionaldev">
+            <div class="card">
               <img
                 src="../resources/img/name.jpg"
-                class="card-img-top"
+                class="card-img"
                 alt="NAME logo"
               />
               <div class="card-body">
                 <h5 class="card-title">
-                  <a href=""
+                  <a href="https://www.nameorg.org/index.php"
                     >The National Association for Multicultural Education</a
                   >
                 </h5>
-                <h6 class="card-subtitle mb-2 text-muted">
-                  NAME
+                <h6 class="card-subtitle">
+                  (NAME)
                 </h6>
                 <p class="card-text">
                   RESOURCE ANNOTATION
                 </p>
               </div>
             </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
-            <div class="card shadow">
+          </li>
+          <li id="lessonplans">
+            <div class="card">
               <img
                 src="../resources/img/tolerance.jpg"
-                class="card-img-top"
+                class="card-img"
                 alt="three young people's faces"
               />
               <div class="card-body">
-                <h5 class="card-title"><a href="">Teaching Tolerance</a></h5>
-                <h6 class="card-subtitle mb-2 text-muted">
-                  Southern Poverty Law Center
+                <h5 class="card-title">
+                  <a href="https://www.tolerance.org/">Teaching Tolerance</a>
+                </h5>
+                <h6 class="card-subtitle">
+                  Southern Poverty Law Center (SPLC)
                 </h6>
                 <p class="card-text">
                   RESOURCE ANNOTATION
                 </p>
               </div>
             </div>
-          </div>
-        </div>
+          </li>
+          <li id="nationalorgs profesionaldev">
+            <div class="card">
+              <img
+                src="../resources/img/edjustice.jpg"
+                class="card-img"
+                alt="group of diverse teens smiling sitting on a wall"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="https://neaedjustice.org/">EdJustice</a>
+                </h5>
+                <h6 class="card-subtitle">
+                  National Education Association (NEA)
+                </h6>
+                <p class="card-text">
+                  RESOURCE ANNOTATION
+                </p>
+              </div>
+            </div>
+          </li>
+          <li id="professionaldev">
+            <div class="card">
+              <img
+                src="../resources/img/edweb.jpg"
+                class="card-img"
+                alt="graphic of desktop computer surrounded by various icons"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a
+                    href="https://home.edweb.net/strategies-for-culturally-responsive-teaching/"
+                    >Strategies for Culturally Responsive Teaching</a
+                  >
+                </h5>
+                <h6 class="card-subtitle">
+                  EdWeb
+                </h6>
+                <p class="card-text">
+                  RESOURCE ANNOTATION
+                </p>
+              </div>
+            </div>
+          </li>
+          <li id="lessonplans">
+            <div class="card">
+              <img
+                src="../resources/img/facinghistory.jpg"
+                class="card-img"
+                alt="ALT TEXT"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="https://www.facinghistory.org/">Facing History</a>
+                </h5>
+                <h6 class="card-subtitle">
+                  Facing History and Ourselves
+                </h6>
+                <p class="card-text">
+                  RESOURCE ANNOTATION
+                </p>
+              </div>
+            </div>
+          </li>
+          <li id="lessonplans">
+            <div class="card">
+              <img
+                src="../resources/img/globaloneness.jpg"
+                class="card-img"
+                alt="tile with text: Youth Sustain Change"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="https://www.globalonenessproject.org/"
+                    >Global Oneness Project</a
+                  >
+                </h5>
+                <h6 class="card-subtitle">
+                  Global Oneness Project LLC
+                </h6>
+                <p class="card-text">
+                  RESOURCE ANNOTATION
+                </p>
+              </div>
+            </div>
+          </li>
+          <li id="lessonplans">
+            <div class="card">
+              <img
+                src="../resources/img/criticalmedia.jpg"
+                class="card-img"
+                alt="young woman using wheelchair, playing a sport"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="https://criticalmediaproject.org/"
+                    >Critical Media Project</a
+                  >
+                </h5>
+                <h6 class="card-subtitle">
+                  (CMP)
+                </h6>
+                <p class="card-text">
+                  RESOURCE ANNOTATION
+                </p>
+              </div>
+            </div>
+          </li>
+          <li id="lessonplans professionaldev">
+            <div class="card">
+              <img
+                src="../resources/img/inclusiveschools.jpg"
+                class="card-img"
+                alt="adult woman giving a thumbs up with a young boy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="https://inclusiveschools.org/"
+                    >Inclusive Schools Network</a
+                  >
+                </h5>
+                <h6 class="card-subtitle">
+                  (Inclusive Schools Network)
+                </h6>
+                <p class="card-text">
+                  RESOURCE ANNOTATION
+                </p>
+              </div>
+            </div>
+          </li>
+          <li id="professionaldev">
+            <div class="card">
+              <img
+                src="../resources/img/cultpedagogy.jpg"
+                class="card-img"
+                alt="a group of students using a makerspace"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="https://www.cultofpedagogy.com/">Cult of Pedagogy</a>
+                </h5>
+                <h6 class="card-subtitle">
+                  Jennifer Gonzalez
+                </h6>
+                <p class="card-text">
+                  RESOURCE ANNOTATION
+                </p>
+              </div>
+            </div>
+          </li>
+          <li id="nationalorgs regionalorgs professionaldev">
+            <div class="card">
+              <img
+                src="../resources/img/idra.jpg"
+                class="card-img"
+                alt="view over the shoulder of a teacher and student reading together"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="https://www.idra.org/"
+                    >International Developmental Research Association</a
+                  >
+                </h5>
+                <h6 class="card-subtitle">
+                  (IDRA)
+                </h6>
+                <p class="card-text">
+                  RESOURCE ANNOTATION
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <p>
+        Collection selected and annotated by Ruth Yawata, Emily Parrish & Austin
+        Foglesong | 2020
+      </p>
+    </footer>
+    <script src="../resources/js/app.js"></script>
   </body>
 </html>
