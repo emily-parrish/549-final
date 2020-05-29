@@ -94,7 +94,6 @@ main {
   position: relative;
   display: flex;
   flex-direction: column;
-  min-width: 300px;
   max-width: 500px;
   word-wrap: break-word;
   background-color: #f5d76b;
