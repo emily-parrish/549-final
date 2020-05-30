@@ -4,21 +4,22 @@
 var userSelect = document.querySelector("#resource-filter");
 userSelect.addEventListener("change", function () {
   console.log(userSelect.value);
-  var element = [document.querySelectorAll("li#cardjs")];
+  // var element = [document.querySelectorAll("li")];
+  var elements = Array.prototype.slice.call(document.querySelectorAll("li"));
 
-  console.log(element);
+  console.log(elements);
 
   //somewhat hot mess below
 
   var i;
 
-  for (i = 0; i < element.length; i++) {
-    console.log(element[i]);
+  for (i = 0; i < elements.length; i++) {
+    console.log(elements[i]);
 
-    if (element[i].classList.contains(userSelect.value)) {
-      element[i].style.display = "";
+    if (elements.indexOf(userSelect.value) !== -1) {
+      elements[i].style.display = "";
     } else {
-      element[i].style.display = "none";
+      elements[i].style.display = "none";
     }
   }
 });
