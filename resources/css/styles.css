@@ -92,18 +92,18 @@ a {
 
 .dropbtn,
 .btn {
-  background-color: #f5d76b;
+  background-color: #fadfa1;
   padding: 12px;
   border: none;
 }
 
 .btn:hover {
-  background-color: #d6b642;
+  background-color: #f5d76b;
 }
 
 .dropbtn:hover,
 .dropbtn:focus {
-  background-color: #d6b642;
+  background-color: #f5d76b;
 }
 
 .resource {
@@ -133,7 +133,7 @@ a {
   flex-direction: column;
   max-width: 500px;
   word-wrap: break-word;
-  background-color: #f5d76b;
+  background-color: #fadfa1;
   background-clip: border-box;
   border-radius: 0.25rem;
   margin-bottom: 2rem;
@@ -173,7 +173,7 @@ h5 a {
 }
 
 footer {
-  background-color: #f5d76b;
+  background-color: #fadfa1;
   margin-top: -16px;
   margin-bottom: 0px;
   padding: 15px;
